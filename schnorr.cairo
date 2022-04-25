@@ -59,7 +59,8 @@ func verify{range_check_ptr}(public_key: EcPoint, signature : Signature, message
     #message
     assert [hashdata + 6] = message
 
-    let (e_v : BigInt3) = bigint_sub_mod(BigInt3(0, 0, 0), BigInt3(0,0,0), q) # TODO: Replace with: hash(hashdata, size=ARRAY_SIZE)
+    let e_0 = 0  # TODO: Replace with: hash(hashdata, size=ARRAY_SIZE)
+    let (e_v : BigInt3) = bigint_sub_mod(BigInt3(e_0, 0, 0), BigInt3(0,0,0), q) # TODO: Replace with: hash(hashdata, size=ARRAY_SIZE)
 
     #TODO: How do we use verify_zero?
     if signature.e.d0 == e_v.d0:
