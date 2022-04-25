@@ -1,4 +1,4 @@
-from bigint import BASE, BigInt3, UnreducedBigInt5, UnreducedBigInt3, bigint_div_mod
+from bigint import BASE, BigInt3, UnreducedBigInt5, UnreducedBigInt3, bigint_div_mod, bigint_mul_mod, bigint_sub_mod
 from param_def import  N0, N1, N2, GX0, GX1, GX2, GY0, GY1, GY2
 from ec import EcPoint, ec_add, ec_mul, ec_neg, verify_point
 from starkware.cairo.common.alloc import alloc
@@ -32,6 +32,9 @@ func sign{range_check_ptr}(private_key : BigInt3, message: felt) -> (signature: 
     let gen_pt = EcPoint(
         BigInt3(GX0, GX1, GX2),
         BigInt3(GY0, GY1, GY2))
+    # the modulus q for the Z_q
+    let q = BigInt3(N0, N1, N2)
+
     #TODO replace with a real random number
     let k = private_key
     let (r: EcPoint) = ec_mul(gen_pt, k)
@@ -60,10 +63,9 @@ func sign{range_check_ptr}(private_key : BigInt3, message: felt) -> (signature: 
 
     let e_0 = 0 # TODO: Replace with: hash(hashdata, size=ARRAY_SIZE)
     let e = BigInt3(e_0, 0, 0)
-    #
-    #let (s_1: EcPoint) = ec_add(private_key, e)
-    #let (neg_s_1: EcPoint) = ec_neg(s_1)
-    #let (s: EcPoint) = ec_add(k, neg_s_1)
+
+    let (s_1: BigInt3) = bigint_mul_mod(private_key, e, q)
+    let (s: BigInt3) = bigint_sub_mod(k, s_1, q)
     let signature = Signature(e, e)
 
     return (signature)
