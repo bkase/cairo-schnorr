@@ -804,6 +804,27 @@
         "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffd6b",
         "0x208b7fff7fff7ffe",
         "0x480a7ffa7fff8000",
+        "0x480680017fff8000",
+        "0xe28d959f2815b16f81798",
+        "0x480680017fff8000",
+        "0xa573a1c2c1c0a6ff36cb7",
+        "0x480680017fff8000",
+        "0x79be667ef9dcbbac55a06",
+        "0x480680017fff8000",
+        "0x554199c47d08ffb10d4b8",
+        "0x480680017fff8000",
+        "0x2ff0384422a3f45ed1229a",
+        "0x480680017fff8000",
+        "0x483ada7726a3c4655da4f",
+        "0x480a7ffb7fff8000",
+        "0x480a7ffc7fff8000",
+        "0x480a7ffd7fff8000",
+        "0x1104800180018000",
+        "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffff39",
+        "0x208b7fff7fff7ffe",
+        "0x480a7ff47fff8000",
+        "0x208b7fff7fff7ffe",
+        "0x480a7ffa7fff8000",
         "0x208b7fff7fff7ffe"
     ],
     "debug_info": {
@@ -25867,7 +25888,7 @@
             "801": {
                 "accessible_scopes": [
                     "__main__",
-                    "__main__.validate_signature_entry"
+                    "__main__.keygen"
                 ],
                 "flow_tracking_data": {
                     "ap_tracking": {
@@ -25875,49 +25896,50 @@
                         "offset": 0
                     },
                     "reference_ids": {
-                        "__main__.validate_signature_entry.range_check_ptr": 211,
-                        "__main__.validate_signature_entry.val": 210
+                        "__main__.keygen.gen_pt": 212,
+                        "__main__.keygen.private_key": 210,
+                        "__main__.keygen.range_check_ptr": 211
                     }
                 },
                 "hints": [],
                 "inst": {
-                    "end_col": 46,
+                    "end_col": 28,
                     "end_line": 5,
                     "input_file": {
                         "filename": "schnorr.cairo"
                     },
                     "parent_location": [
                         {
-                            "end_col": 46,
-                            "end_line": 5,
+                            "end_col": 28,
+                            "end_line": 207,
                             "input_file": {
-                                "filename": "schnorr.cairo"
+                                "filename": "/Users/bkase/cairo/ec.cairo"
                             },
                             "parent_location": [
                                 {
-                                    "end_col": 14,
-                                    "end_line": 6,
+                                    "end_col": 53,
+                                    "end_line": 11,
                                     "input_file": {
                                         "filename": "schnorr.cairo"
                                     },
-                                    "start_col": 5,
-                                    "start_line": 6
+                                    "start_col": 26,
+                                    "start_line": 11
                                 },
                                 "While trying to retrieve the implicit argument 'range_check_ptr' in:"
                             ],
-                            "start_col": 31,
-                            "start_line": 5
+                            "start_col": 13,
+                            "start_line": 207
                         },
                         "While expanding the reference 'range_check_ptr' in:"
                     ],
-                    "start_col": 31,
+                    "start_col": 13,
                     "start_line": 5
                 }
             },
             "802": {
                 "accessible_scopes": [
                     "__main__",
-                    "__main__.validate_signature_entry"
+                    "__main__.keygen"
                 ],
                 "flow_tracking_data": {
                     "ap_tracking": {
@@ -25925,19 +25947,553 @@
                         "offset": 1
                     },
                     "reference_ids": {
-                        "__main__.validate_signature_entry.range_check_ptr": 211,
-                        "__main__.validate_signature_entry.val": 210
+                        "__main__.keygen.gen_pt": 212,
+                        "__main__.keygen.private_key": 210,
+                        "__main__.keygen.range_check_ptr": 211
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 20,
+                    "end_line": 8,
+                    "input_file": {
+                        "filename": "schnorr.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 39,
+                            "end_line": 11,
+                            "input_file": {
+                                "filename": "schnorr.cairo"
+                            },
+                            "start_col": 33,
+                            "start_line": 11
+                        },
+                        "While expanding the reference 'gen_pt' in:"
+                    ],
+                    "start_col": 17,
+                    "start_line": 8
+                }
+            },
+            "804": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.keygen"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 25,
+                        "offset": 2
+                    },
+                    "reference_ids": {
+                        "__main__.keygen.gen_pt": 212,
+                        "__main__.keygen.private_key": 210,
+                        "__main__.keygen.range_check_ptr": 211
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 25,
+                    "end_line": 8,
+                    "input_file": {
+                        "filename": "schnorr.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 39,
+                            "end_line": 11,
+                            "input_file": {
+                                "filename": "schnorr.cairo"
+                            },
+                            "start_col": 33,
+                            "start_line": 11
+                        },
+                        "While expanding the reference 'gen_pt' in:"
+                    ],
+                    "start_col": 22,
+                    "start_line": 8
+                }
+            },
+            "806": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.keygen"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 25,
+                        "offset": 3
+                    },
+                    "reference_ids": {
+                        "__main__.keygen.gen_pt": 212,
+                        "__main__.keygen.private_key": 210,
+                        "__main__.keygen.range_check_ptr": 211
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 30,
+                    "end_line": 8,
+                    "input_file": {
+                        "filename": "schnorr.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 39,
+                            "end_line": 11,
+                            "input_file": {
+                                "filename": "schnorr.cairo"
+                            },
+                            "start_col": 33,
+                            "start_line": 11
+                        },
+                        "While expanding the reference 'gen_pt' in:"
+                    ],
+                    "start_col": 27,
+                    "start_line": 8
+                }
+            },
+            "808": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.keygen"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 25,
+                        "offset": 4
+                    },
+                    "reference_ids": {
+                        "__main__.keygen.gen_pt": 212,
+                        "__main__.keygen.private_key": 210,
+                        "__main__.keygen.range_check_ptr": 211
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 20,
+                    "end_line": 9,
+                    "input_file": {
+                        "filename": "schnorr.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 39,
+                            "end_line": 11,
+                            "input_file": {
+                                "filename": "schnorr.cairo"
+                            },
+                            "start_col": 33,
+                            "start_line": 11
+                        },
+                        "While expanding the reference 'gen_pt' in:"
+                    ],
+                    "start_col": 17,
+                    "start_line": 9
+                }
+            },
+            "810": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.keygen"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 25,
+                        "offset": 5
+                    },
+                    "reference_ids": {
+                        "__main__.keygen.gen_pt": 212,
+                        "__main__.keygen.private_key": 210,
+                        "__main__.keygen.range_check_ptr": 211
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 25,
+                    "end_line": 9,
+                    "input_file": {
+                        "filename": "schnorr.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 39,
+                            "end_line": 11,
+                            "input_file": {
+                                "filename": "schnorr.cairo"
+                            },
+                            "start_col": 33,
+                            "start_line": 11
+                        },
+                        "While expanding the reference 'gen_pt' in:"
+                    ],
+                    "start_col": 22,
+                    "start_line": 9
+                }
+            },
+            "812": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.keygen"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 25,
+                        "offset": 6
+                    },
+                    "reference_ids": {
+                        "__main__.keygen.gen_pt": 212,
+                        "__main__.keygen.private_key": 210,
+                        "__main__.keygen.range_check_ptr": 211
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 30,
+                    "end_line": 9,
+                    "input_file": {
+                        "filename": "schnorr.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 39,
+                            "end_line": 11,
+                            "input_file": {
+                                "filename": "schnorr.cairo"
+                            },
+                            "start_col": 33,
+                            "start_line": 11
+                        },
+                        "While expanding the reference 'gen_pt' in:"
+                    ],
+                    "start_col": 27,
+                    "start_line": 9
+                }
+            },
+            "814": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.keygen"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 25,
+                        "offset": 7
+                    },
+                    "reference_ids": {
+                        "__main__.keygen.gen_pt": 212,
+                        "__main__.keygen.private_key": 210,
+                        "__main__.keygen.range_check_ptr": 211
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 50,
+                    "end_line": 5,
+                    "input_file": {
+                        "filename": "schnorr.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 52,
+                            "end_line": 11,
+                            "input_file": {
+                                "filename": "schnorr.cairo"
+                            },
+                            "start_col": 41,
+                            "start_line": 11
+                        },
+                        "While expanding the reference 'private_key' in:"
+                    ],
+                    "start_col": 30,
+                    "start_line": 5
+                }
+            },
+            "815": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.keygen"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 25,
+                        "offset": 8
+                    },
+                    "reference_ids": {
+                        "__main__.keygen.gen_pt": 212,
+                        "__main__.keygen.private_key": 210,
+                        "__main__.keygen.range_check_ptr": 211
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 50,
+                    "end_line": 5,
+                    "input_file": {
+                        "filename": "schnorr.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 52,
+                            "end_line": 11,
+                            "input_file": {
+                                "filename": "schnorr.cairo"
+                            },
+                            "start_col": 41,
+                            "start_line": 11
+                        },
+                        "While expanding the reference 'private_key' in:"
+                    ],
+                    "start_col": 30,
+                    "start_line": 5
+                }
+            },
+            "816": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.keygen"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 25,
+                        "offset": 9
+                    },
+                    "reference_ids": {
+                        "__main__.keygen.gen_pt": 212,
+                        "__main__.keygen.private_key": 210,
+                        "__main__.keygen.range_check_ptr": 211
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 50,
+                    "end_line": 5,
+                    "input_file": {
+                        "filename": "schnorr.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 52,
+                            "end_line": 11,
+                            "input_file": {
+                                "filename": "schnorr.cairo"
+                            },
+                            "start_col": 41,
+                            "start_line": 11
+                        },
+                        "While expanding the reference 'private_key' in:"
+                    ],
+                    "start_col": 30,
+                    "start_line": 5
+                }
+            },
+            "817": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.keygen"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 25,
+                        "offset": 10
+                    },
+                    "reference_ids": {
+                        "__main__.keygen.gen_pt": 212,
+                        "__main__.keygen.private_key": 210,
+                        "__main__.keygen.range_check_ptr": 211
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 53,
+                    "end_line": 11,
+                    "input_file": {
+                        "filename": "schnorr.cairo"
+                    },
+                    "start_col": 26,
+                    "start_line": 11
+                }
+            },
+            "819": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.keygen"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 26,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "__main__.keygen.gen_pt": 212,
+                        "__main__.keygen.private_key": 210,
+                        "__main__.keygen.range_check_ptr": 213,
+                        "__main__.keygen.res": 214
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 17,
+                    "end_line": 12,
+                    "input_file": {
+                        "filename": "schnorr.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 12
+                }
+            },
+            "820": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.verify"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 27,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "__main__.verify.public_key": 215,
+                        "__main__.verify.range_check_ptr": 217,
+                        "__main__.verify.val": 216
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 28,
+                    "end_line": 15,
+                    "input_file": {
+                        "filename": "schnorr.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 28,
+                            "end_line": 15,
+                            "input_file": {
+                                "filename": "schnorr.cairo"
+                            },
+                            "parent_location": [
+                                {
+                                    "end_col": 14,
+                                    "end_line": 16,
+                                    "input_file": {
+                                        "filename": "schnorr.cairo"
+                                    },
+                                    "start_col": 5,
+                                    "start_line": 16
+                                },
+                                "While trying to retrieve the implicit argument 'range_check_ptr' in:"
+                            ],
+                            "start_col": 13,
+                            "start_line": 15
+                        },
+                        "While expanding the reference 'range_check_ptr' in:"
+                    ],
+                    "start_col": 13,
+                    "start_line": 15
+                }
+            },
+            "821": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.verify"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 27,
+                        "offset": 1
+                    },
+                    "reference_ids": {
+                        "__main__.verify.public_key": 215,
+                        "__main__.verify.range_check_ptr": 217,
+                        "__main__.verify.val": 216
                     }
                 },
                 "hints": [],
                 "inst": {
                     "end_col": 14,
-                    "end_line": 6,
+                    "end_line": 16,
                     "input_file": {
                         "filename": "schnorr.cairo"
                     },
                     "start_col": 5,
-                    "start_line": 6
+                    "start_line": 16
+                }
+            },
+            "822": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.sign"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 28,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "__main__.sign.range_check_ptr": 219,
+                        "__main__.sign.val": 218
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 26,
+                    "end_line": 19,
+                    "input_file": {
+                        "filename": "schnorr.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 26,
+                            "end_line": 19,
+                            "input_file": {
+                                "filename": "schnorr.cairo"
+                            },
+                            "parent_location": [
+                                {
+                                    "end_col": 14,
+                                    "end_line": 20,
+                                    "input_file": {
+                                        "filename": "schnorr.cairo"
+                                    },
+                                    "start_col": 5,
+                                    "start_line": 20
+                                },
+                                "While trying to retrieve the implicit argument 'range_check_ptr' in:"
+                            ],
+                            "start_col": 11,
+                            "start_line": 19
+                        },
+                        "While expanding the reference 'range_check_ptr' in:"
+                    ],
+                    "start_col": 11,
+                    "start_line": 19
+                }
+            },
+            "823": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.sign"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 28,
+                        "offset": 1
+                    },
+                    "reference_ids": {
+                        "__main__.sign.range_check_ptr": 219,
+                        "__main__.sign.val": 218
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 14,
+                    "end_line": 20,
+                    "input_file": {
+                        "filename": "schnorr.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 20
                 }
             }
         }
@@ -26099,15 +26655,15 @@
             "destination": "ec.ec_mul",
             "type": "alias"
         },
-        "__main__.validate_signature_entry": {
+        "__main__.keygen": {
             "decorators": [],
             "pc": 801,
             "type": "function"
         },
-        "__main__.validate_signature_entry.Args": {
-            "full_name": "__main__.validate_signature_entry.Args",
+        "__main__.keygen.Args": {
+            "full_name": "__main__.keygen.Args",
             "members": {
-                "val": {
+                "private_key": {
                     "cairo_type": "bigint.BigInt3",
                     "offset": 0
                 }
@@ -26115,8 +26671,8 @@
             "size": 3,
             "type": "struct"
         },
-        "__main__.validate_signature_entry.ImplicitArgs": {
-            "full_name": "__main__.validate_signature_entry.ImplicitArgs",
+        "__main__.keygen.ImplicitArgs": {
+            "full_name": "__main__.keygen.ImplicitArgs",
             "members": {
                 "range_check_ptr": {
                     "cairo_type": "felt",
@@ -26126,19 +26682,54 @@
             "size": 1,
             "type": "struct"
         },
-        "__main__.validate_signature_entry.Return": {
-            "full_name": "__main__.validate_signature_entry.Return",
-            "members": {},
-            "size": 0,
+        "__main__.keygen.Return": {
+            "full_name": "__main__.keygen.Return",
+            "members": {
+                "res": {
+                    "cairo_type": "ec.EcPoint",
+                    "offset": 0
+                }
+            },
+            "size": 6,
             "type": "struct"
         },
-        "__main__.validate_signature_entry.SIZEOF_LOCALS": {
+        "__main__.keygen.SIZEOF_LOCALS": {
             "type": "const",
             "value": 0
         },
-        "__main__.validate_signature_entry.range_check_ptr": {
+        "__main__.keygen.gen_pt": {
+            "cairo_type": "ec.EcPoint",
+            "full_name": "__main__.keygen.gen_pt",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 25,
+                        "offset": 0
+                    },
+                    "pc": 801,
+                    "value": "cast((\n    (17117865558768631194064792, 12501176021340589225372855, 9198697782662356105779718),\n    (6441780312434748884571320, 57953919405111227542741658, 5457536640262350763842127)), ec.EcPoint)"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.keygen.private_key": {
+            "cairo_type": "bigint.BigInt3",
+            "full_name": "__main__.keygen.private_key",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 25,
+                        "offset": 0
+                    },
+                    "pc": 801,
+                    "value": "[cast(fp + (-5), bigint.BigInt3*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.keygen.range_check_ptr": {
             "cairo_type": "felt",
-            "full_name": "__main__.validate_signature_entry.range_check_ptr",
+            "full_name": "__main__.keygen.range_check_ptr",
             "references": [
                 {
                     "ap_tracking_data": {
@@ -26147,20 +26738,181 @@
                     },
                     "pc": 801,
                     "value": "[cast(fp + (-6), felt*)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 26,
+                        "offset": 0
+                    },
+                    "pc": 819,
+                    "value": "[cast(ap + (-7), felt*)]"
                 }
             ],
             "type": "reference"
         },
-        "__main__.validate_signature_entry.val": {
-            "cairo_type": "bigint.BigInt3",
-            "full_name": "__main__.validate_signature_entry.val",
+        "__main__.keygen.res": {
+            "cairo_type": "ec.EcPoint",
+            "full_name": "__main__.keygen.res",
             "references": [
                 {
                     "ap_tracking_data": {
-                        "group": 25,
+                        "group": 26,
                         "offset": 0
                     },
-                    "pc": 801,
+                    "pc": 819,
+                    "value": "[cast(ap + (-6), ec.EcPoint*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.sign": {
+            "decorators": [],
+            "pc": 822,
+            "type": "function"
+        },
+        "__main__.sign.Args": {
+            "full_name": "__main__.sign.Args",
+            "members": {
+                "val": {
+                    "cairo_type": "bigint.BigInt3",
+                    "offset": 0
+                }
+            },
+            "size": 3,
+            "type": "struct"
+        },
+        "__main__.sign.ImplicitArgs": {
+            "full_name": "__main__.sign.ImplicitArgs",
+            "members": {
+                "range_check_ptr": {
+                    "cairo_type": "felt",
+                    "offset": 0
+                }
+            },
+            "size": 1,
+            "type": "struct"
+        },
+        "__main__.sign.Return": {
+            "full_name": "__main__.sign.Return",
+            "members": {},
+            "size": 0,
+            "type": "struct"
+        },
+        "__main__.sign.SIZEOF_LOCALS": {
+            "type": "const",
+            "value": 0
+        },
+        "__main__.sign.range_check_ptr": {
+            "cairo_type": "felt",
+            "full_name": "__main__.sign.range_check_ptr",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 28,
+                        "offset": 0
+                    },
+                    "pc": 822,
+                    "value": "[cast(fp + (-6), felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.sign.val": {
+            "cairo_type": "bigint.BigInt3",
+            "full_name": "__main__.sign.val",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 28,
+                        "offset": 0
+                    },
+                    "pc": 822,
+                    "value": "[cast(fp + (-5), bigint.BigInt3*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.verify": {
+            "decorators": [],
+            "pc": 820,
+            "type": "function"
+        },
+        "__main__.verify.Args": {
+            "full_name": "__main__.verify.Args",
+            "members": {
+                "public_key": {
+                    "cairo_type": "ec.EcPoint",
+                    "offset": 0
+                },
+                "val": {
+                    "cairo_type": "bigint.BigInt3",
+                    "offset": 6
+                }
+            },
+            "size": 9,
+            "type": "struct"
+        },
+        "__main__.verify.ImplicitArgs": {
+            "full_name": "__main__.verify.ImplicitArgs",
+            "members": {
+                "range_check_ptr": {
+                    "cairo_type": "felt",
+                    "offset": 0
+                }
+            },
+            "size": 1,
+            "type": "struct"
+        },
+        "__main__.verify.Return": {
+            "full_name": "__main__.verify.Return",
+            "members": {},
+            "size": 0,
+            "type": "struct"
+        },
+        "__main__.verify.SIZEOF_LOCALS": {
+            "type": "const",
+            "value": 0
+        },
+        "__main__.verify.public_key": {
+            "cairo_type": "ec.EcPoint",
+            "full_name": "__main__.verify.public_key",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 27,
+                        "offset": 0
+                    },
+                    "pc": 820,
+                    "value": "[cast(fp + (-11), ec.EcPoint*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.verify.range_check_ptr": {
+            "cairo_type": "felt",
+            "full_name": "__main__.verify.range_check_ptr",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 27,
+                        "offset": 0
+                    },
+                    "pc": 820,
+                    "value": "[cast(fp + (-12), felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.verify.val": {
+            "cairo_type": "bigint.BigInt3",
+            "full_name": "__main__.verify.val",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 27,
+                        "offset": 0
+                    },
+                    "pc": 820,
                     "value": "[cast(fp + (-5), bigint.BigInt3*)]"
                 }
             ],
@@ -31692,6 +32444,70 @@
                     "offset": 0
                 },
                 "pc": 801,
+                "value": "[cast(fp + (-6), felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 25,
+                    "offset": 0
+                },
+                "pc": 801,
+                "value": "cast((\n    (17117865558768631194064792, 12501176021340589225372855, 9198697782662356105779718),\n    (6441780312434748884571320, 57953919405111227542741658, 5457536640262350763842127)), ec.EcPoint)"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 26,
+                    "offset": 0
+                },
+                "pc": 819,
+                "value": "[cast(ap + (-7), felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 26,
+                    "offset": 0
+                },
+                "pc": 819,
+                "value": "[cast(ap + (-6), ec.EcPoint*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 27,
+                    "offset": 0
+                },
+                "pc": 820,
+                "value": "[cast(fp + (-11), ec.EcPoint*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 27,
+                    "offset": 0
+                },
+                "pc": 820,
+                "value": "[cast(fp + (-5), bigint.BigInt3*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 27,
+                    "offset": 0
+                },
+                "pc": 820,
+                "value": "[cast(fp + (-12), felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 28,
+                    "offset": 0
+                },
+                "pc": 822,
+                "value": "[cast(fp + (-5), bigint.BigInt3*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 28,
+                    "offset": 0
+                },
+                "pc": 822,
                 "value": "[cast(fp + (-6), felt*)]"
             }
         ]
