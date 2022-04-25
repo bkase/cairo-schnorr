@@ -1,6 +1,8 @@
 from bigint import BASE, BigInt3, UnreducedBigInt5, UnreducedBigInt3, bigint_div_mod
 from param_def import  N0, N1, N2, GX0, GX1, GX2, GY0, GY1, GY2
-from ec import EcPoint, ec_add, ec_mul, verify_point
+from ec import EcPoint, ec_add, ec_mul, ec_neg, verify_point
+from starkware.cairo.common.alloc import alloc
+
 
 # The signature for signing a message (M: felt)
 struct Signature:
@@ -27,6 +29,42 @@ end
 
 func sign{range_check_ptr}(private_key : BigInt3, message: felt) -> (signature: Signature) :
     # TODO(bkase)
-    let signature = Signature(private_key, private_key)
+    let gen_pt = EcPoint(
+        BigInt3(GX0, GX1, GX2),
+        BigInt3(GY0, GY1, GY2))
+    #TODO replace with a real random number
+    let k = private_key
+    let (r: EcPoint) = ec_mul(gen_pt, k)
+
+    #----
+    # Make an array
+    #----
+    const ARRAY_SIZE = 4
+    # Allocate an array.
+    let (hashdata) = alloc()
+    # Populate some values in the array.
+    #r1x
+    assert [hashdata] = r.x.d0
+    #r1y
+    assert [hashdata + 1] = r.y.d0
+    #r2x
+    assert [hashdata] = r.x.d1
+    #r2y
+    assert [hashdata + 1] = r.y.d1
+    #r3x
+    assert [hashdata] = r.x.d2
+    #r3y
+    assert [hashdata + 1] = r.y.d2
+    #message
+    assert [hashdata + 3] = message
+
+    let e_0 = 0 # TODO: Replace with: hash(hashdata, size=ARRAY_SIZE)
+    let e = BigInt3(e_0, 0, 0)
+    #
+    #let (s_1: EcPoint) = ec_add(private_key, e)
+    #let (neg_s_1: EcPoint) = ec_neg(s_1)
+    #let (s: EcPoint) = ec_add(k, neg_s_1)
+    let signature = Signature(e, e)
+
     return (signature)
 end
